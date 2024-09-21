@@ -1,0 +1,18 @@
+.venv
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+db.sqlite3
+db.sqlite3-journal
+db*.sqlite3
+db*.sqlite3-journal
+
+# IDE
+.idea
+.vscode
