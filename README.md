@@ -18,6 +18,7 @@ pip install -r requirements.txt
 Create a user for your application:
 
 ```bash
+python3 manage.py migrate
 python3 manage.py createsuperuser
 ```
 
@@ -59,12 +60,21 @@ To do this:
 - an endpoint to create a secure random token should be created
 - the two endpoints related to the questions (listing the questions and answering the questions) should be available with a "token" authentication (so without being authenticated as a regular user)
 
+### Quick introduction on Django
+
+If you don't know about Django or Django-Rest-Framework, here is a list of resource to learn the basics:
+- https://docs.djangoproject.com/en/5.1/intro/tutorial02/#creating-models (only the `Creating models`  and `Playing with the API` sections)
+- https://www.django-rest-framework.org/tutorial/quickstart/
+
+The rest of the Django and Django-Rest-Framework documentations are very helpful if you have questions on specific topics.
+
 ### Expectations
 
 We don't recommend spending more than 2 hours on this exercise.
 
 * The endpoints should work as described above
-* Please take any opportunities to improve the code (refactoring the structure,
+* Once the endpoints work as described above,
+  please take any opportunities to improve the code (refactoring the structure,
   adding methods for common logic, etc.), we will talk about these during the
   interview
   * When dealing with this point, if you run out of time, it would be helpful to
